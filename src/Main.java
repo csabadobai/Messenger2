@@ -22,7 +22,7 @@ public class Main {
             InputStreamReader inputStreamReader = new InputStreamReader(socket.getInputStream());
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
-            printWriter.println("Enter username");
+            printWriter.println("Enter username:");
             String username = bufferedReader.readLine();
             user.setSocket(socket);
             user.setUsername(username);
